@@ -77,7 +77,7 @@ button {
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
       
-        background: blue;
+        background: lightblue;
     }
 
 .btn1:hover {
