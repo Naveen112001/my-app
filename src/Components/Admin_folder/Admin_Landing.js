@@ -17,10 +17,19 @@ function Admin_Landing() {
     const handle1 = (e) => {
         navigate('ReturningBook', { replace: true }); 
     }
-    return (<div>
+    const myFunction = (e) =>
+    {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+    }
+ 
+    return (
+        <div>
         <h1>Administrator Login  </h1>
         <Button variant="success" onClick={(e) => handle(e)}> Books Section</Button>
         <Button variant="info" onClick={(e) => handle1(e)}> Student Section</Button>
+      
+    
     </div>)
 }
 export default Admin_Landing;

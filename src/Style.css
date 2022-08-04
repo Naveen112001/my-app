@@ -67,29 +67,32 @@ body {
         opacity: 1;
     }
 }
-.Editing 
-{
+.Editing {
     color: azure;
     background-color: darkblue;
     width: 100%;
     border-radius: 10px 9px;
     margin-top: 10px;
+    border-color: #04AA6D;
+    border-width: 3px;
 }
-.returnbook 
-{
+.returnbook {
     color: azure;
     background-color: darkolivegreen;
     width: 100%;
     border-radius: 10px 9px;
     margin-top: 10px;
-    margin-left:20px;
+    margin-left: 20px;
+    border-color: #04AA6D;
+    border-width: 3px;
 }
-.returnbook:hover 
-{
+    .returnbook:hover {
         color: azure;
         background-color: lightgreen;
         width: 100%;
-}
+        border-color: black;
+        border-width: 3px;
+    }
 .tablerows {
 }
 .deleting {
@@ -99,16 +102,22 @@ body {
     border-radius: 10px 9px;
     margin-top: 10px;
     margin-left: 10px;
+    border-color: #f44336;
+    border-width: 3px;
 }
-.deleting:hover {
-    color: azure;
-    background-color: red;
-    width: 100%;
-}
+    .deleting:hover {
+        color: azure;
+        background-color: red;
+        width: 100%;
+        border-color: black;
+        border-width: 3px;
+    }
 .Editing:hover {
     color: azure;
-    background-color: blue;
+    background-color: #FF3399FF;
     width: 100%;
+    border-width: 3px;
+    border-color: black;
 }
 
 .Nav {

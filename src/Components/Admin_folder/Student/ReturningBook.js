@@ -219,16 +219,23 @@ function ReturningBook() {
                 borrowDate: response.data.borrowDate,
                 returnDate: today,
                 isreturned: true
-            }
-            console.log(data1.Id);
-            comp = url2 + "/" + data1.Id;
-            axios.put(comp, data1).then((JSON) => {
-                alert("Returned Successfully");
-                window.location.reload(false);
-            }).catch((Error) => {
-                alert(Error);
-                console.log(Error);
-            })
+           }
+           if (response.data.isreturned) {
+               alert("Already returned  please click edit to change");
+
+           } else
+           {
+               console.log(data1.Id);
+               comp = url2 + "/" + data1.Id;
+               axios.put(comp, data1).then((JSON) => {
+                   alert("Returned Successfully");
+                   window.location.reload(false);
+               }).catch((Error) => {
+                   alert(Error);
+                   console.log(Error);
+               })
+           }
+           
         })
             .catch((Error) => { console.log(Error) })
             
@@ -266,7 +273,7 @@ function ReturningBook() {
                                 <td class='dates'>{item.borrowDate.substring(0, 10)}</td>
                                 <td class='dates'>{item.returnDate.substring(0, 10)}</td>
                                 <td class='status'>{foo(item.isreturned).toString()}</td>
-                                <td class='buttons'><button class='Editing' onClick={(e) => onhandledit(item.studentId)}>Edit</button> </td> <td><button class='deleting' onClick={(e) => onhandledelete(item.studentId)}>Delete</button></td> <td class='buttons'><button class='returnbook' onClick={(e) => onhandlereturn(item.studentId)}>Return Book</button></td>
+                                <td class='buttons'><button class='Editing' onClick={(e) => onhandledit(item.studentId)}>Edit</button> </td> <td><button class='deleting' onClick={(e) => onhandledelete(item.studentId)}>Delete</button></td> <td class='buttons'><button  class='returnbook' onClick={(e) => onhandlereturn(item.studentId)}>Return Book</button></td>
                             </tr>
 
                         ))}
