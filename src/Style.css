@@ -1,0 +1,252 @@
+body {
+    background-color: aliceblue;
+    text-align: center;
+}
+.Editing 
+{
+    color: azure;
+    background-color: darkblue;
+    width: 100%;
+    border-radius: 10px 9px;
+    margin-top: 10px;
+}
+.returnbook 
+{
+    color: azure;
+    background-color: darkolivegreen;
+    width: 100%;
+    border-radius: 10px 9px;
+    margin-top: 10px;
+    margin-left:20px;
+}
+.returnbook:hover 
+{
+        color: azure;
+        background-color: lightgreen;
+        width: 100%;
+}
+.tablerows {
+}
+.deleting {
+    color: azure;
+    background-color: darkred;
+    width: 100%;
+    border-radius: 10px 9px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.deleting:hover {
+    color: azure;
+    background-color: red;
+    width: 100%;
+}
+.Editing:hover {
+    color: azure;
+    background-color: blue;
+    width: 100%;
+}
+.Nav {
+    background-color: cornflowerblue;
+    display: inline-flex;
+    float: inline-start;
+    padding: 40px 200px 30px 50px;
+    color: aliceblue;
+}
+button {
+    width: 20%;
+    padding: 12px 10px;
+    border-color: blue;
+    font-size: 15px;
+
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background:darkblue;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #98ffdf;
+    scrollbar-3dlight-color:chartreuse;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      
+        background: blue;
+    }
+
+.btn1:hover {
+    width: 200%;
+    padding: 12px 10px;
+    font-size: 20px;
+    border-color: orangered;
+    font-weight: bold;
+    color: crimson;
+}
+.Int {
+    width: 100%;
+}
+.btn1 {
+    width: 200%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: medium;
+}
+input {
+    width: 30%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size:medium;
+}
+.headings {
+    text-align: left;
+    color: white;
+    font-size:45px;
+}
+
+li {
+    margin-top: 10px;
+    text-decoration: none;
+    float: right;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 5px;
+    float: right;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+nav ul li .Navlist {
+    color: white;
+    text-decoration: none;
+}
+nav ul{
+    text-align:right;
+  
+}
+nav ul li NavLink {
+    color: white;
+    text-decoration: none;
+}
+
+NavLink {
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.Navlist {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li NavLink.Navlist:hover {
+    background-color: lightsalmon;
+    color: black;
+}
+nav ul li NavLink .Navlist {
+    color: whitesmoke;
+}
+
+nav ul li:active {
+    background-color: lightblue;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width:720px) {
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .ulist {
+        position: absolute;
+        right: 0px;
+        height: 150vh;
+        top: 8vh;
+        background-color: lightblue;
+        text-align: end;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform ease-in;
+
+    }
+    .ulist li {
+        text-align: center;
+        width: 180px;
+        height: 350px;
+        border: 1px solid rgb(140, 140, 228);
+        color: rgb(225, 180, 243);
+        background-color: rgb(40, 85, 231);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 40px;
+        font-weight: bold;
+        border-top: 0px;
+        border-bottom: 0px;
+    }
+    .bugger {
+        display: block;
+    }
+    .Intro {
+        text-align: center;
+        color: whitesmoke;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .headings {
+        font-size: 24px;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-8px, -6px);
+}

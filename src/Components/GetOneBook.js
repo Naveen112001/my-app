@@ -1,0 +1,84 @@
+// JavaScript source code
+
+import axios from 'axios';
+import React, { useState } from "react";
+import * as ReactDOM from 'react-dom';
+
+import Button from 'react-bootstrap/Button';
+function GetOneBook() {
+ 
+    const [bookName, setbookName] = useState("");
+
+  var name
+    var bookAuthor;
+    var bookCount;
+    var booksid;
+    const handleSubmit = (e) => {
+        const url = "https://localhost:44391/api/Home/Books/Getbyname"
+        const data = {
+           name: bookName
+        }
+        const cent = {
+            marginRight: 'auto',
+            marginLeft:'auto'
+        }
+        axios.get(`${url}/${bookName}`)
+            .then(function (response) {
+                name = response.data.bookName;
+                bookCount = response.data.count;
+                bookAuthor = response.data.author;
+                booksid = response.data.bookId;
+                ReactDOM.render(
+                    <div ><table style={cent}>
+                    <tbody>
+                    <tr>
+                        <th>Book Id</th>
+                        <th>Book Title</th>
+                        <th>Author</th>
+                        <th>Book count</th>
+                    </tr>
+                    
+                        <tr>
+                            <td>{booksid}</td>
+                            <td>{name}</td>
+                            <td>{bookAuthor}</td>
+                            <td>{bookCount}</td>
+                        </tr>
+
+                        </tbody></table></div>, document.getElementById("Result"))
+             //   document.getElementById("Result").innerHTML = "Book Id:" + booksid + " book Title:" + bookTitle + " Book Author:" + bookAuthor + "Book Count:" + bookCount;
+                document.getElementById("Result").style.color = "green";
+                document.getElementById("centre").style.marginLeft = "auto";
+                document.getElementById("centre").style.marginRight = "auto";
+            })
+
+            .catch((error) => {
+                console.log(error);
+              
+                ReactDOM.render(<div>No Books are available</div>, document.getElementById("Result"));
+                document.getElementById("Result").style.color = "red";
+            })
+    }
+    return (
+
+        <div  id="centre">
+    
+            <br />
+            <h5>Enter Book Id</h5>
+            <br />
+            <div class="form-group">
+                <input type="text" value={bookName} placeholder='Enter Book name' onChange={(e) => setbookName(e.target.value)} required />
+            </div>
+            <br />
+            <br />
+            <div class="form-group">
+                <Button class="outline-danger" onClick={(e) => handleSubmit(e)}>Get Book Details</Button>
+            </div>
+            <div id="Result" />
+            
+        </div>
+
+    );
+}
+
+export default GetOneBook;
