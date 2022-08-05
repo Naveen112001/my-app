@@ -94,6 +94,7 @@ body {
         border-width: 3px;
     }
 .tablerows {
+  
 }
 .deleting {
     color: azure;
@@ -134,25 +135,28 @@ button {
     font-size: 15px;
 
 }
-::-webkit-scrollbar {
+::-webkit-scrollbar 
+{
     width: 10px;
 }
 
 
-::-webkit-scrollbar-track {
-    background: #FFC9DEF5;
+::-webkit-scrollbar-track 
+{
+    background: azure;
 }
 
 
-::-webkit-scrollbar-thumb {
-    background: #98ffdf;
+::-webkit-scrollbar-thumb 
+{
+    background: lightblue;
     scrollbar-3dlight-color:chartreuse;
 }
 
     /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-      
-        background: lightblue;
+    ::-webkit-scrollbar-thumb:hover
+    {      
+        background: darkblue;
     }
 
 .btn1:hover {

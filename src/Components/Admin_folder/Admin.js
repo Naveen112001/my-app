@@ -26,6 +26,8 @@ function Admin() {
         axios.post('https://localhost:44391/api/Home/Administrator/Login', data).then((response) => {
             if (response.status = 200) {
                 document.cookie = "userid=" + AdminUserId + ";";
+                sessionStorage.setItem("adminId", AdminUserId);
+                sessionStorage.setItem("Password", Password);
                 //  console.log(document.cookie);
                 navigate('/Admin/Admin_Landing', { replace: true });        
                
