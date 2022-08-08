@@ -39,7 +39,7 @@ function Admin() {
                 
                     
             }
-        })
+        }).catch((Error) => { alert("Currently api service not available"); })
 
     }
     return (

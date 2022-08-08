@@ -3,11 +3,16 @@
 
 import axios from 'axios';
 
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import * as ReactDOM from 'react-dom';
 import { useNavigate } from "react-router-dom";
 
 function AddBooks() {
+    const navigate = useNavigate();
+    useEffect(() => {
+        if (sessionStorage.length == 0) { navigate('Admin', { replace: true }); }
+    })
+    
     const cent = {
         marginRight: 'auto',
         marginLeft: 'auto'
@@ -18,7 +23,7 @@ function AddBooks() {
     const [Title, setTitle] = useState("");
     const [Count, setCount] = useState("");
     const [Author, setAuthor] = useState("");
-    const navigate = useNavigate();
+   
     const handleSubmit=(e) => { 
     const data = {
         bookId: 0,

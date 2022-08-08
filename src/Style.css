@@ -164,6 +164,7 @@ button {
     padding: 12px 10px;
     font-size: 20px;
     border-color: orangered;
+    background-color: greenyellow;
     font-weight: bold;
     color: crimson;
 }
@@ -171,6 +172,7 @@ button {
     width: 100%;
 }
 .btn1 {
+    background-color:lawngreen;
     width: 200%;
     padding: 15px 20px;
     margin: 8px 0;

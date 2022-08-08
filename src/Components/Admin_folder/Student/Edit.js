@@ -1,7 +1,7 @@
 // JavaScript source code
 
 
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
@@ -16,6 +16,10 @@ function Edit(props) {
         color: 'green',
         marginTop: '50px'
     }
+    const navigate = useNavigate();
+    useEffect(() => {
+        if (sessionStorage.length == 0) { navigate('Admin', { replace: true }); }
+    })
     const url = "https://localhost:44391/api/Home";
     const [id, setid] = useState("");
     const [studname, setstudname] = useState("");
@@ -31,8 +35,8 @@ function Edit(props) {
     useEffect(() => {
         fetchData()
     })
-
-
+    
+  
     const fetchData = () => {
         fetch(URL)
             .then((res) =>

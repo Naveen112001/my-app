@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
 import { Fragment, useState, useEffect } from 'react';
 import axios from 'axios';
 import Edit from './Edit';
@@ -13,7 +13,9 @@ const cent = {
     color: 'green',
     marginTop:'20px'
 }
+
 function ReturningBook() {
+    
     const [data, getData] = useState([]);
     const foo = (a) => {
         if (a) { return "Returned"; }
@@ -21,6 +23,10 @@ function ReturningBook() {
         else { return "Not Returned"; }
 
     }
+    const navigate = useNavigate();
+    useEffect(() => {
+        if (sessionStorage.length == 0) { navigate('Admin', { replace: true }); }
+    })
     const url1 = "https://localhost:44391/api/Home/Search/Student";
     const url2 = "https://localhost:44391/api/Home";
     var id = 0;
@@ -34,8 +40,10 @@ function ReturningBook() {
                 res.json())
 
             .then((response) => {
-              //  console.log(response);
+                //  console.log(response);
                 getData(response);
+            }).catch((Error) => {
+               
             })
 
     }

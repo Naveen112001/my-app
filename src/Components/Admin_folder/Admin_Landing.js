@@ -11,6 +11,7 @@ function Admin_Landing() {
     const navigate = useNavigate();
     let name = sessionStorage.getItem("adminId"); 
     if (sessionStorage.length == 0) {
+
         useEffect(() => { navigate('Admin', { replace: true }); })
        
      
@@ -28,6 +29,7 @@ function Admin_Landing() {
         }
         const logout = (e) => {
             sessionStorage.clear();
+            
             navigate('Admin', { replace: true });
         }
         return (
