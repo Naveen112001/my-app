@@ -36,15 +36,13 @@ function App() {
                     <nav class = "navcontainer">
         <ul class = "ulist"className = 'navbar-nav' >
         <li className = 'nav-item- m-1' >
-                        <NavLink style={colors} class="Navlist"  className="btn btn-light btn-outline-primary" to = "/GetOneBook" >Get Book by Id </NavLink> </li>
+                        <NavLink style={colors} class="Navlist"  className="btn btn-light btn-outline-primary" to = "/GetOneBook" >Search for Books </NavLink> </li>
 
         <li className = 'nav-item- m-1' >
         <NavLink style = { colors }        class = "Navlist"        className = "btn btn-light btn-outline-primary"        to = "/Books" >
         View All Books </NavLink> </li>
 
-        <li className = 'nav-item- m-1' >
-        <NavLink style = { colors }        class = "Navlist"        className = "btn btn-light btn-outline-primary"        to = "/Student_Book_Registry" >
-        Student Book Registry </NavLink> </li> 
+        
                     <li className='nav-item- m-1' >
                         <NavLink style={colors} class="Navlist" className="btn btn-light btn-outline-primary" to="/Admin" >
                             Administrator Section</NavLink> </li>
