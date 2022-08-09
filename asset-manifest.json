@@ -1,7 +1,7 @@
 {
   "main.css": "/my-app/static/css/main.c7a9d90e.chunk.css",
-  "main.js": "/my-app/static/js/main.2c72b09c.chunk.js",
-  "main.js.map": "/my-app/static/js/main.2c72b09c.chunk.js.map",
+  "main.js": "/my-app/static/js/main.a8655985.chunk.js",
+  "main.js.map": "/my-app/static/js/main.a8655985.chunk.js.map",
   "static/js/1.dca74a03.chunk.js": "/my-app/static/js/1.dca74a03.chunk.js",
   "static/js/1.dca74a03.chunk.js.map": "/my-app/static/js/1.dca74a03.chunk.js.map",
   "static/css/2.7526cc41.chunk.css": "/my-app/static/css/2.7526cc41.chunk.css",
@@ -11,10 +11,10 @@
   "runtime~main.js.map": "/my-app/static/js/runtime~main.a54f5570.js.map",
   "static/media/BookImage.jpg": "/my-app/static/media/BookImage.86ea0143.jpg",
   "static/media/libimage.jpg": "/my-app/static/media/libimage.f2e3d66a.jpg",
-  "static/media/bootstrap.css": "/my-app/static/media/glyphicons-halflings-regular.89889688.svg",
+  "static/media/bootstrap.css": "/my-app/static/media/glyphicons-halflings-regular.448c34a5.woff2",
   "static/css/main.c7a9d90e.chunk.css.map": "/my-app/static/css/main.c7a9d90e.chunk.css.map",
   "static/css/2.7526cc41.chunk.css.map": "/my-app/static/css/2.7526cc41.chunk.css.map",
   "index.html": "/my-app/index.html",
-  "precache-manifest.bf1e8a90770840154f38a472cd1da3b2.js": "/my-app/precache-manifest.bf1e8a90770840154f38a472cd1da3b2.js",
+  "precache-manifest.3bd7b53a1473a363dbd42368914bddd0.js": "/my-app/precache-manifest.3bd7b53a1473a363dbd42368914bddd0.js",
   "service-worker.js": "/my-app/service-worker.js"
 }
