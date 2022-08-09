@@ -4,8 +4,10 @@
     "\\src",
     "\\src\\Components",
     "\\src\\Components\\Admin_folder",
-    "\\src\\Components\\Admin_folder\\Student"
+    "\\src\\Components\\Admin_folder\\Books",
+    "\\src\\Components\\Admin_folder\\Student",
+    "\\src\\Components\\images"
   ],
-  "SelectedNode": "\\src\\Components\\Admin_folder\\Admin_Landing.js",
+  "SelectedNode": "\\src\\Components\\Admin_folder\\Books",
   "PreviewInSolutionExplorer": false
 }

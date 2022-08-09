@@ -1,5 +1,6 @@
 // JavaScript source code
-
+//import bgimg from './Components/images/libimage.jpg';
+import pic from "C:/Users/MY LAP/source/repos/React_Project/my-app/src/Components/images/BookImage.jpg";
 import { Button } from 'react-bootstrap';
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link, useNavigate, Redirect } from "react-router-dom";
@@ -33,14 +34,38 @@ function Admin_Landing() {
             navigate('Admin', { replace: true });
         }
         return (
-            <div>
+            <div style={{
+                backgroundImage: 'url(' + pic + ')',
+                backgroundRepeat: 'no-repeat',
+                backgroundAttachment: 'fixed',
+                padding: '10px 30px 40px 50px',
+                fillOpacity: '1',
+                backgroundSize: 'cover',
+                minHeight: '250px'
+            }}>
 
-                <h1>Administrator Login {name}  </h1>
+                <h1 style={{
+                    color: 'White',
+                    fontStyle: 'italic'
+                } }>Administrator Login: {name}  </h1>
                 <Button variant="success" onClick={(e) => handle(e)}> Books Section</Button>
+                <br />
+                <br />
                 <Button variant="info" onClick={(e) => handle1(e)}> Student Section</Button>
+                <br />
+                <br />
                 <Button varian="danger" onClick={(e) => logout(e)}>
                     Logout
                 </Button>
+                <br />
+                <br />    <br />
+                <br />    <br />
+                <br />    <br />
+                <br />    <br />
+                <br />    <br />
+                <br />    <br />
+                <br />    <br />
+              
 
             </div>)
     }

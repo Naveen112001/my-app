@@ -1,6 +1,10 @@
 body {
     background-color: aliceblue;
     text-align: center;
+  
+}
+Routes {
+  
 }
 .popup {
     position: relative;
@@ -95,6 +99,22 @@ body {
     }
 .tablerows {
   
+}
+.Start {
+    border-radius: 10px;
+    font-size: 45px;
+    width:1000px;
+    color: darkblue;
+   
+    background-color: transparent;
+   
+}
+.Start:hover {
+    border-radius:10px;
+    font-size: 45px;
+    color: darkblue;
+    opacity:0.5;
+    background-color: white;
 }
 .deleting {
     color: azure;

@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import './index.css';
+import bgimg from './Components/images/libimage.jpg';
 import ReturningBook from './Components/Admin_folder/Student/ReturningBook';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import GetOneBook from './Components/GetOneBook';
@@ -10,6 +11,7 @@ import Books from './Components/Books';
 import Admin from './Components/Admin_folder/Admin';
 import Admin_Landing from './Components/Admin_folder/Admin_Landing';
 import './Style.css';
+import Home from './Home';
 
 import Student_Book_Registry from './Components/Student_Book_Registry';
 
@@ -21,10 +23,12 @@ function App() {
     }
    
 
-    return ( <BrowserRouter>
+    return (
+        <BrowserRouter
+            >
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous" > </script>
-        <div class="Nav" >
+            <div class="Nav" >
 
         <h1 class = "headings">
                 Library Management System
@@ -49,9 +53,9 @@ function App() {
         </div>
 
         <div>
-            <h2>  Welcome to Library website</h2>
+           
             <Routes >
-       
+                <Route path='/' element={<Home/> }/>
                 <Route path='/GetOneBook' element={< GetOneBook />} />
                 <Route path='Admin/Admin_Landing/AddBooks' element={< AddBooks />} />
                 <        Route path='/Books' element={< Books />} />

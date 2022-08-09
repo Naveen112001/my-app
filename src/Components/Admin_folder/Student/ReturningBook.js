@@ -25,7 +25,7 @@ function ReturningBook() {
     }
     const navigate = useNavigate();
     useEffect(() => {
-        if (sessionStorage.length == 0) { navigate('Admin', { replace: true }); }
+        if (sessionStorage.length == 0) { navigate('Admin',{replace: true }); }
     })
     const url1 = "https://localhost:44391/api/Home/Search/Student";
     const url2 = "https://localhost:44391/api/Home";

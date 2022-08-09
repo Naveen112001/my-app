@@ -1,7 +1,8 @@
 // JavaScript source code
 
 
-
+//import bgimg from './Components/images/libimage.jpg';
+//import pic from "./Components/images/BookImage.jpg";
 import React from 'react';
 import {BrowserRouter, Routes, Route, Link, useNavigate} from "react-router-dom";
 import { Fragment, useState, useEffect } from 'react';
@@ -25,7 +26,7 @@ function Admin() {
         }
         axios.post('https://localhost:44391/api/Home/Administrator/Login', data).then((response) => {
             if (response.status = 200) {
-                document.cookie = "userid=" + AdminUserId + ";";
+             //   document.cookie = "userid=" + AdminUserId + ";";
                 sessionStorage.setItem("adminId", AdminUserId);
                 sessionStorage.setItem("Password", Password);
                 //  console.log(document.cookie);
