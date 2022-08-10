@@ -1,6 +1,6 @@
 // JavaScript source code
 //import bgimg from './Components/images/libimage.jpg';
-import pic from "C:/Users/MY LAP/source/repos/React_Project/my-app/src/Components/images/BookImage.jpg";
+import pic from "./BookImage.jpg";
 import { Button } from 'react-bootstrap';
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link, useNavigate, Redirect } from "react-router-dom";
@@ -57,14 +57,7 @@ function Admin_Landing() {
                 <Button varian="danger" onClick={(e) => logout(e)}>
                     Logout
                 </Button>
-                <br />
-                <br />    <br />
-                <br />    <br />
-                <br />    <br />
-                <br />    <br />
-                <br />    <br />
-                <br />    <br />
-                <br />    <br />
+               
               
 
             </div>)
