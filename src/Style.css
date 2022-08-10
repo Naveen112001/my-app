@@ -217,7 +217,14 @@ input {
     color: white;
     font-size:45px;
 }
-
+.container {
+    text-align: center;
+    width: 700px;
+    height: 500px;
+    font-weight: bold;
+    font-size: 20px;
+   padding:100px;
+}
 li {
     margin-top: 10px;
     text-decoration: none;

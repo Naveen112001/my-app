@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import './index.css';
+import Error from "./Components/Errors";
 import bgimg from './Components/images/libimage.jpg';
 import ReturningBook from './Components/Admin_folder/Student/ReturningBook';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -60,7 +61,8 @@ function App() {
                 <        Route path = '/Student_Book_Registry' element={< Student_Book_Registry />} />
                 <        Route path='Admin/Admin_Landing/ReturningBook' element={< ReturningBook />} />
                 <        Route path='Admin/Admin_Landing' element={< Admin_Landing />} />
-                <Route path='/Admin/*' element={< Admin />} />
+                    <Route path='/Admin/*' element={< Admin />} />
+                    <Route path='/Error' element={< Error />} />
             </Routes>
         </div>
         <div id="Body"> </div>
