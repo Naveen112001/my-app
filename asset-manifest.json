@@ -1,7 +1,7 @@
 {
-  "main.css": "/my-app/static/css/main.ea4b5d5f.chunk.css",
-  "main.js": "/my-app/static/js/main.f77b7a63.chunk.js",
-  "main.js.map": "/my-app/static/js/main.f77b7a63.chunk.js.map",
+  "main.css": "/my-app/static/css/main.59eea57e.chunk.css",
+  "main.js": "/my-app/static/js/main.9ff5d8de.chunk.js",
+  "main.js.map": "/my-app/static/js/main.9ff5d8de.chunk.js.map",
   "static/js/1.aea4a5bd.chunk.js": "/my-app/static/js/1.aea4a5bd.chunk.js",
   "static/js/1.aea4a5bd.chunk.js.map": "/my-app/static/js/1.aea4a5bd.chunk.js.map",
   "static/css/2.cb69946e.chunk.css": "/my-app/static/css/2.cb69946e.chunk.css",
@@ -11,11 +11,11 @@
   "runtime~main.js.map": "/my-app/static/js/runtime~main.9ffa698a.js.map",
   "static/media/BookImage.jpg": "/my-app/static/media/BookImage.86ea0143.jpg",
   "static/media/libimage.jpg": "/my-app/static/media/libimage.f2e3d66a.jpg",
-  "static/media/bootstrap.css": "/my-app/static/media/glyphicons-halflings-regular.fa277232.woff",
+  "static/media/bootstrap.css": "/my-app/static/media/glyphicons-halflings-regular.e18bbf61.ttf",
   "static/media/errorImg.png": "/my-app/static/media/errorImg.c789c83d.png",
-  "static/css/main.ea4b5d5f.chunk.css.map": "/my-app/static/css/main.ea4b5d5f.chunk.css.map",
+  "static/css/main.59eea57e.chunk.css.map": "/my-app/static/css/main.59eea57e.chunk.css.map",
   "static/css/2.cb69946e.chunk.css.map": "/my-app/static/css/2.cb69946e.chunk.css.map",
   "index.html": "/my-app/index.html",
-  "precache-manifest.e3452eba02a5e57438eb470f81674f1d.js": "/my-app/precache-manifest.e3452eba02a5e57438eb470f81674f1d.js",
+  "precache-manifest.edaf96582acda7dd82ffba3d6ffdfe02.js": "/my-app/precache-manifest.edaf96582acda7dd82ffba3d6ffdfe02.js",
   "service-worker.js": "/my-app/service-worker.js"
 }
