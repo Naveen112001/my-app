@@ -6,7 +6,7 @@ import * as ReactDOM from 'react-dom';
 
 import Button from 'react-bootstrap/Button';
 function GetOneBook() {
- 
+    
     const [bookName, setbookName] = useState("");
 
   var name
@@ -63,17 +63,15 @@ function GetOneBook() {
 
         <div  id="centre">
     
-            <br />
-            <h5>Enter Book Id</h5>
-            <br />
+    
             <div class="form-group">
                 <input type="text" value={bookName} placeholder='Enter Book name' onChange={(e) => setbookName(e.target.value)} required />
-            </div>
-            <br />
-            <br />
-            <div class="form-group">
-                <Button class="outline-danger" onClick={(e) => handleSubmit(e)}>Get Book Details</Button>
-            </div>
+
+                <button class="Searchbtn" onClick={(e) => handleSubmit(e)}><i class="fa fa-search"></i></button></div>
+         
+   
+
+   
             <div id="Result" />
             
         </div>

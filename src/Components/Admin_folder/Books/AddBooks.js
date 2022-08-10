@@ -48,13 +48,18 @@ function AddBooks() {
                 <br />
                 <h5>Enter New Book Entry Details</h5>
             <br />
+            <div class="card">
             <table style={cent} >
                 <tr> <td><label>Book Id</label> </td> <td><input style={ wid} type="number" disabled required value={BookId} placeholder='Automatically Updated Field ' onChange={(e) => setBookId(e.target.value)} /></td></tr>
                 <tr> <td><label>Book Title</label> </td> <td><input style={wid} type="text" required value={Title} placeholder='Book Title or Book Name' onChange={(e) => setTitle(e.target.value)} /></td></tr>
                 <tr> <td><label>Count </label> </td> <td><input style={wid} type="number" required value={Count} placeholder='Number of Books available in Library' onChange={(e) => setCount(e.target.value)} /></td></tr>
                 <tr> <td><label>Book Author</label> </td> <td><input style={wid} type="text" required value={Author} placeholder='Author of the Book' onChange={(e) => setAuthor(e.target.value)} /></td></tr>
                 </table>
+             
                 <button class="btn btn-primary mb-2" onClick={(e) => handleSubmit(e)}>Add New Book</button>
+                <br />
+                <br/>
+            </div>
             <div id="error"></div>
         </Fragment>
 );

@@ -16,10 +16,7 @@ function Edit(props) {
         color: 'green',
         marginTop: '50px'
     }
-    const navigate = useNavigate();
-    useEffect(() => {
-        if (sessionStorage.length == 0) { navigate('Admin', { replace: true }); }
-    })
+    
     const url = "https://localhost:44391/api/Home";
     const [id, setid] = useState("");
     const [studname, setstudname] = useState("");

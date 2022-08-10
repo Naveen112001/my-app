@@ -202,6 +202,15 @@ button {
     box-sizing: border-box;
     font-size: medium;
 }
+.card {
+    box-shadow: 0 10px 15px 0 cornflowerblue;
+    transition: 0.3s;
+    width: 40%;
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
 input {
     width: 30%;
     padding: 15px 20px;
@@ -211,11 +220,28 @@ input {
     border-radius: 4px;
     box-sizing: border-box;
     font-size:medium;
+    height:auto;
 }
-.headings {
+.Searchbtn {
+    padding: 15px 20px;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    border-radius: 4px;
+    font-size: 20px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    width: 5%;
+}
+.Searchbtn:hover {
+    background-color:blue;
+}
+    .headings {
     text-align: left;
     color: white;
-    font-size:45px;
+    font-size: 45px;
 }
 .container {
     text-align: center;
