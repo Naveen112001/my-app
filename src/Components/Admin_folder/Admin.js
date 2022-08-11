@@ -15,6 +15,10 @@ function Admin() {
         marginLeft: 'auto',
         color: 'green'
     }
+    useEffect(() => {
+        if (sessionStorage.length != 0)
+        { navigate('/Admin/Admin_Landing', { replace: true }); }
+    })
     const [AdminUserId, SetAdminUserId] = useState("");
     const navigate = useNavigate();
     const [Password, setPassword] = useState("");

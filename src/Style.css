@@ -1,7 +1,7 @@
-body {
+body
+{
     background-color: aliceblue;
-    text-align: center;
-  
+    text-align: center;  
 }
 Routes {
   
@@ -12,6 +12,9 @@ Routes {
     text-align: center;
     background-color: transparent;
     
+}
+@media screen and (max-width: 720px) {
+   
 }
 #landing {
     background-color:transparent;
@@ -249,14 +252,18 @@ button {
     font-size: medium;
 }
 .card {
-    box-shadow: 0 10px 15px 0 cornflowerblue;
-    transition: 0.3s;
+    box-shadow: 0 10px 15px 0 cornflowerblue;  
     width: 40%;
     margin: 0;
+    background-color:white;
     position: absolute;
     top: 30%;
     left: 30%;
 }
+    .card :active {
+        box-shadow: 0 10px 15px 0 darkblue;
+        transition: 0.1s;
+    }
 input {
     width: 30%;
     padding: 15px 20px;
@@ -359,6 +366,27 @@ nav ul li:active {
         max-width: 100%;
         overflow-x: hidden;
     }
+    .card {
+        box-shadow: 0 10px 15px 0 cornflowerblue;
+        width:100%;  
+        float:left;       
+    
+    }
+    .card1 {
+        box-shadow: 0 10px 15px 0 cornflowerblue;
+        width: 100%;
+        height: 50%;
+        margin-bottom: 20px;
+        background-color: transparent;
+    }
+    .column {
+        width: 100%;
+        margin-bottom: 0;
+        height: 33%;
+    }
+
+   
+
     body {
         overflow-x: hidden;
     }

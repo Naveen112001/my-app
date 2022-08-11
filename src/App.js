@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import './index.css';
 import Error from "./Components/Errors";
-import bgimg from './Components/images/libimage.jpg';
+
 import ReturningBook from './Components/Admin_folder/Student/ReturningBook';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import GetOneBook from './Components/GetOneBook';

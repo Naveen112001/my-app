@@ -2,7 +2,7 @@
 
 
 import axios from 'axios';
-
+import pic from './books.jpg';
 import React, { Fragment, useState, useEffect } from "react";
 import * as ReactDOM from 'react-dom';
 import { useNavigate } from "react-router-dom";
@@ -43,12 +43,22 @@ function AddBooks() {
 
     }
     return (
-         
-            <Fragment>
+        <div style={{
+            backgroundImage: 'url(' + pic + ')',
+            backgroundRepeat: 'no-repeat',
+            backgroundAttachment: 'fixed',
+            padding: '10px 30px 40px 50px',
+            fillOpacity: '1',
+            backgroundSize: 'cover',
+            minHeight: '550px'
+          
+        }}>
+      
                 <br />
-                <h5>Enter New Book Entry Details</h5>
             <br />
             <div class="card">
+
+                <h2>Enter New Book Entry Details</h2>
             <table style={cent} >
                 <tr> <td><label>Book Id</label> </td> <td><input style={ wid} type="number" disabled required value={BookId} placeholder='Automatically Updated Field ' onChange={(e) => setBookId(e.target.value)} /></td></tr>
                 <tr> <td><label>Book Title</label> </td> <td><input style={wid} type="text" required value={Title} placeholder='Book Title or Book Name' onChange={(e) => setTitle(e.target.value)} /></td></tr>
@@ -61,7 +71,7 @@ function AddBooks() {
                 <br/>
             </div>
             <div id="error"></div>
-        </Fragment>
+        </div>
 );
 }
 export default AddBooks;

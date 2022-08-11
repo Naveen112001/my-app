@@ -41,7 +41,8 @@ function Admin_Landing() {
                 padding: '10px 30px 40px 50px',
                 fillOpacity: '1',
                 backgroundSize: 'cover',
-                minHeight: '250px'
+                minHeight: '250px',
+              
             }}>
 
                 <h1 style={{
