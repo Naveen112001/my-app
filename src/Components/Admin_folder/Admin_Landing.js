@@ -48,16 +48,26 @@ function Admin_Landing() {
                     color: 'White',
                     fontStyle: 'italic'
                 } }>Administrator Login: {name}  </h1>
-                <Button variant="success" onClick={(e) => handle(e)}> Books Section</Button>
-                <br />
-                <br />
-                <Button variant="info" onClick={(e) => handle1(e)}> Student Section</Button>
-                <br />
-                <br />
-                <Button varian="danger" onClick={(e) => logout(e)}>
-                    Logout
-                </Button>
+                <div class="row">
+                    <div class="column">
+                        <div class="card1" onClick={(e) => handle(e)}>
+                            <button id="landing" onClick={(e) => handle(e)}> Books Section</button>
+                            <div id="result">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="column">
+                        <div class="card1" onClick={(e) => handle1(e)}>
+                            <button id="landing" onClick={(e) => handle1(e)}> Student Section</button> <div id="result">
+                            </div></div></div>
                
+                    <div class="column">
+                        <div class="card1" onClick={(e) => logout(e)}>
+                <button id="landing"  onClick={(e) => logout(e)}>
+                    Logout
+                            </button>
+                        </div></div></div>
               
 
             </div>)
