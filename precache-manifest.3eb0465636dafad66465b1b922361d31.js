@@ -28,20 +28,20 @@ self.__precacheManifest = [
     "url": "/my-app/static/media/glyphicons-halflings-regular.f4769f9b.eot"
   },
   {
-    "revision": "448c34a56d699c29117adc64c43affeb",
-    "url": "/my-app/static/media/glyphicons-halflings-regular.448c34a5.woff2"
-  },
-  {
     "revision": "fa2772327f55d8198301fdb8bcfc8158",
     "url": "/my-app/static/media/glyphicons-halflings-regular.fa277232.woff"
   },
   {
-    "revision": "89889688147bd7575d6327160d64e760",
-    "url": "/my-app/static/media/glyphicons-halflings-regular.89889688.svg"
-  },
-  {
     "revision": "e18bbf611f2a2e43afc071aa2f4e1512",
     "url": "/my-app/static/media/glyphicons-halflings-regular.e18bbf61.ttf"
+  },
+  {
+    "revision": "448c34a56d699c29117adc64c43affeb",
+    "url": "/my-app/static/media/glyphicons-halflings-regular.448c34a5.woff2"
+  },
+  {
+    "revision": "89889688147bd7575d6327160d64e760",
+    "url": "/my-app/static/media/glyphicons-halflings-regular.89889688.svg"
   },
   {
     "revision": "f2e3d66a06ab1dac27ad19ff804b0b0d",
