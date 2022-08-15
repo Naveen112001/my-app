@@ -13,7 +13,7 @@ function Errors() {
                                minHeight: '250px'
     }}  >
         <div class="container">
-Some thing Went worng Try again later        </div>
+Something Went worng Try again later        </div>
     </div>)
 }
 export default Errors;

@@ -37,7 +37,7 @@ function Home() {
             <h3 style={{ color: 'white' }}> Students Corner</h3> 
             <br /> <br /> <br /> <br /> <br /> <br />
             <button
-                class="Start" onClick={(e) => onstart(e)}>Let'start the block the book from the library</button>
+                class="Start" onClick={(e) => onstart(e)}> Let's starts the Books Reservation </button>
             <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
         </div>
     )    

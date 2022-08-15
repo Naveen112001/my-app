@@ -6,12 +6,24 @@ body
 Routes {
   
 }
+.Workstart{
+    background-color:rgb(94, 150, 39);
+    font-size:15px;
+    font-family:'Times New Roman', Times, serif;
+    border-radius:5px;
+    font-weight:bold;
+}
+    .Workstart:active {
+        background-color: rgb(221, 254, 6);
+        font-size: 20px;
+      
+     
+    }
 .card1 {
     box-shadow: 2px 9px 16px 0 #8d420b;
     padding: 16px;
     text-align: center;
     background-color: transparent;
-    
 }
 @media screen and (max-width: 720px) {
    

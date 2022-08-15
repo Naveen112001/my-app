@@ -54,13 +54,16 @@ function GetOneBook() {
 
             .catch((error) => {
                 console.log(error);
-                if (error.response.status == 400) {
+                if (error.response.status == 404) {
 
                     ReactDOM.render(<div>No Books are available</div>, document.getElementById("Result"));
                     document.getElementById("Result").style.color = "red";
                 } else { navigate('/Error', { replace: true }); }
                
             })
+    }
+    const onstart = (e) => {
+        navigate('/Student_Book_Registry')
     }
     return (
 
@@ -71,12 +74,10 @@ function GetOneBook() {
                 <input type="text" value={bookName} placeholder='Enter Book name' onChange={(e) => setbookName(e.target.value)} required />
 
                 <button class="Searchbtn" onClick={(e) => handleSubmit(e)}><i class="fa fa-search"></i></button></div>
-         
-   
-
-   
             <div id="Result" />
-            
+            <div id="workspace">
+                <button class="Workstart" onClick={(e) => onstart(e)}>Books Reservation</button>
+            </div>
         </div>
 
     );
