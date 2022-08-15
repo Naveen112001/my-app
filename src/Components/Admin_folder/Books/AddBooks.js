@@ -1,5 +1,3 @@
-// JavaScript source code
-
 
 import axios from 'axios';
 import pic from './books.jpg';

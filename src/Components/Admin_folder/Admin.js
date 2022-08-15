@@ -44,7 +44,10 @@ function Admin() {
                 
                     
             }
-        }).catch((Error) => { alert("Currently api service not available"); })
+        }).catch((Error) => {
+            alert("Currently api service not available");
+            navigate('/Error', { replace: true });  
+        })
 
     }
     return (

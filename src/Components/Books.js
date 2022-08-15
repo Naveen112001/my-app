@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from 'react';
-
+import { useNavigate } from 'react-router-dom';
+import Error from "./Errors";
 //import { Column, Table } from 'react-virtualized';
 //import { List } from "react-virtualized";
+import axios from 'axios';
 function Books() {
     const [data, getData] = useState([])
     const URL = 'https://localhost:44391/api/Home/Books/Get';
-
+    const navigate = useNavigate();
     useEffect(() => {
-        fetchData()
+
+        Release();
+        
+ 
     }, [])
 
     const cent = {
@@ -16,17 +21,30 @@ function Books() {
         color:'green'
     }
 
-    
+    const Release = () => {
+        axios.get(URL).then(function (response) {
+            getData(response.data);
+        }).catch((Error)=>{
+            navigate('/Error', { replace: true })
+        })
+    }
     const fetchData = () => {
-        fetch(URL)
+        try {
+            fetch(URL)
             .then((res) =>
                 res.json())
 
             .then((response) => {
-               
+
                 console.log(response);
                 getData(response);
             })
+}
+        catch (Error) {
+            navigate('/Error', { replace: true })
+ 
+        }
+        
 
     }
     const st1 = {

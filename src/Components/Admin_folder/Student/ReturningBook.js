@@ -15,12 +15,19 @@ const cent = {
 }
 
 function ReturningBook() {
-    
+    var btnstatus=0;
     const [data, getData] = useState([]);
     const foo = (a) => {
-        if (a) { return "Returned"; }
+        if (a) {
+            btnstatus = 1;
 
-        else { return "Not Returned"; }
+            return "Returned";
+        }
+
+        else {
+            btnstatus = 0;
+            return "Not Returned";
+        }
 
     }
     const navigate = useNavigate();
@@ -187,6 +194,7 @@ function ReturningBook() {
         })
     
     }
+ 
     const s2 = {
         marginRight: 'auto',
         marginLeft: 'auto', width: '1000px', height: '450px', overflow: 'auto', color: 'red'
@@ -281,7 +289,11 @@ function ReturningBook() {
                                 <td class='dates'>{item.borrowDate.substring(0, 10)}</td>
                                 <td class='dates'>{item.returnDate.substring(0, 10)}</td>
                                 <td class='status'>{foo(item.isreturned).toString()}</td>
-                                <td class='buttons'><button class='Editing' onClick={(e) => onhandledit(item.studentId)}>Edit</button> </td> <td><button class='deleting' onClick={(e) => onhandledelete(item.studentId)}>Delete</button></td> <td class='buttons'><button  class='returnbook' onClick={(e) => onhandlereturn(item.studentId)}>Return Book</button></td>
+                                <td class='buttons'>
+                                    <button class='Editing' onClick={(e) => onhandledit(item.studentId)}>Edit</button> </td>
+                                <td><button class='deleting' onClick={(e) => onhandledelete(item.studentId)}>Delete</button>
+                                </td> <td class='buttons'><button class='returnbook' onClick={(e) => onhandlereturn(item.studentId)}>Return Book</button>
+                                </td>
                             </tr>
 
                         ))}

@@ -1,5 +1,4 @@
-// JavaScript source code
-//import bgimg from './Components/images/libimage.jpg';
+
 import pic from "./BookImage.jpg";
 import { Button } from 'react-bootstrap';
 import React from 'react';

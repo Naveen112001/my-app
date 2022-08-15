@@ -3,12 +3,12 @@
 import axios from 'axios';
 import React, { useState } from "react";
 import * as ReactDOM from 'react-dom';
-
+import { BrowserRouter, Routes, Route, Link, useNavigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 function GetOneBook() {
     
     const [bookName, setbookName] = useState("");
-
+    const navigate = useNavigate();
   var name
     var bookAuthor;
     var bookCount;
@@ -54,9 +54,12 @@ function GetOneBook() {
 
             .catch((error) => {
                 console.log(error);
-              
-                ReactDOM.render(<div>No Books are available</div>, document.getElementById("Result"));
-                document.getElementById("Result").style.color = "red";
+                if (error.response.status == 400) {
+
+                    ReactDOM.render(<div>No Books are available</div>, document.getElementById("Result"));
+                    document.getElementById("Result").style.color = "red";
+                } else { navigate('/Error', { replace: true }); }
+               
             })
     }
     return (
